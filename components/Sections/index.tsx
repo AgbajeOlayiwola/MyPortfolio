@@ -3,7 +3,15 @@ import Cover from "../Cover";
 import Image from "next/image";
 import styles from "./styles.module.css";
 
-const Sections = ({ paragraph, layout, image }) => {
+const Sections = ({
+  paragraph,
+  layout,
+  image,
+}: {
+  paragraph: string;
+  layout: string;
+  image: string;
+}) => {
   const [width, setWidth] = useState(0);
 
   const [height, setHeight] = useState(0);

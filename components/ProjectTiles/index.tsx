@@ -24,6 +24,15 @@ const ProjectTiles = ({
   about,
   moreAbout,
   features,
+}: {
+  title: string;
+  image1: string;
+  image2: string;
+  image3: string;
+  shortTitle: string;
+  about: string;
+  moreAbout: string;
+  features: any;
 }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
