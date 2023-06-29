@@ -1,0 +1,65 @@
+.contactArea{
+    display: flex;
+}
+.overlay{
+    background: #122B41;
+    padding: 60px 40px;
+    margin-top: 60px;
+}
+.form{
+    display: flex;
+    gap: 30px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    border-radius: 20px;
+}
+.inputs input{
+    padding: 10px 20px;
+    border-radius: 20px;  
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textarea  textarea{
+    border-radius: 10px;
+    padding: 10px;
+}
+.textarea input{
+    color: white;
+    background-color: #F6683C;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+}
+.textarea input:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: #692d1b;
+}
+.alCover{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 990px) {
+    .alCover{
+margin-left: 0px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

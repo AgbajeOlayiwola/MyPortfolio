@@ -9,15 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@anatoliygatt/dark-mode-toggle": "^1.0.1",
+    "@emotion/react": "^11.11.1",
     "@next/font": "13.4.7",
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "dark-mode-toggle": "^0.14.6",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "mdb-react-ui-kit": "^6.1.0",
     "next": "13.4.7",
     "react": "18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-lottie": "^1.2.3",
+    "react-modal": "^3.16.1",
+    "react-redux": "^8.1.1",
+    "sass": "^1.63.6",
     "typescript": "5.1.5"
+  },
+  "devDependencies": {
+    "@types/react-lottie": "^1.2.6",
+    "@types/react-modal": "^3.16.0"
   }
 }

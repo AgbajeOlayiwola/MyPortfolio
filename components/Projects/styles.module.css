@@ -1,0 +1,35 @@
+.projectsBack{
+    background-color: #183A58;
+    padding: 40px 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 145px;
+    overflow: scroll;
+    align-items: center;
+}
+.tellidocOther{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.mainImage{
+ 
+    gap: 20px;
+    cursor: pointer;
+}
+.projectsBack img{
+    border-radius: 12px;
+}
+.projectsBack img:hover{
+    transition: all 0.5s ease-in-out;
+    box-shadow:0 25px 20px rgb(43 43 43 / 52%);
+   
+}
+.lott{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lott div{
+    margin: 0px !important;
+}

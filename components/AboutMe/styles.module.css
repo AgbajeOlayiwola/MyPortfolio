@@ -1,0 +1,21 @@
+.aboutMe{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+.heading{
+    text-align: center;
+    border-bottom: solid 1px #F6683C;
+    margin-bottom: 90px;
+}
+.aboutMeImage{
+    margin-right: -10%;
+}
+.aboutParagraph{
+    width: 100%;
+}
+@media screen and (max-width: 990px) {
+    .aboutParagraph{
+        text-align: justify;
+    }
+}

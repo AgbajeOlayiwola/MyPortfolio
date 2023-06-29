@@ -1,0 +1,112 @@
+.heroSection{
+    background-image: url('/HI.svg');
+    background-repeat: no-repeat;
+    background-position: 11% 36%;
+    /* height: 69vh; */
+}
+.heroTitle{
+width: 100%;
+}
+.heroSectionDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sideimage{
+margin-right: -10%;
+}
+
+.titleSection{
+margin-top: 15%;
+margin-left: 7%;
+}
+
+.ownwemage img{
+    border-radius: 50%;
+    border: solid 1px #F6683C;
+}
+.bentunderline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .bentunderline::before {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* Adjust the value to control the distance of the underline from the text */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the value to control the thickness of the underline */
+    background-color: #F6683C; /* Adjust the color of the underline */
+    transform: skew(-20deg); /* Adjust the angle of the bent underline */
+  }
+  .skills{
+    display: flex;
+    gap: 40px;
+  }
+  .skills div{
+    border-bottom: solid 1px #F6683C;
+  }
+  .skills h1{
+    font-size: 16px;
+  }
+  @media screen and (max-width: 990px) {
+    .heroSection{
+      background-image: url('/HI.svg');
+      background-repeat: no-repeat;
+      background-size: 30%;
+      background-position: 11% 36%;
+      /* height: 69vh; */
+  }
+  .heroTitle{
+    width: 100%;
+    }
+    .heroSectionDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sideimage{
+    margin-right: -10%;
+    }
+    
+    .titleSection{
+      margin-top: 95%;
+      margin-left: 7%;
+    }
+    
+    .ownwemage img{
+        border-radius: 50%;
+        border: solid 1px #F6683C;
+    }
+    .bentunderline {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+      }
+      
+      .bentunderline::before {
+        content: "";
+        position: absolute;
+        bottom: -4px; /* Adjust the value to control the distance of the underline from the text */
+        left: 0;
+        width: 100%;
+        height: 2px; /* Adjust the value to control the thickness of the underline */
+        background-color: #F6683C; /* Adjust the color of the underline */
+        transform: skew(-20deg); /* Adjust the angle of the bent underline */
+      }
+      .skills{
+        display: flex;
+        gap: 40px;
+        overflow: scroll;
+        margin-top: 65px;
+      }
+      .skills div{
+        border-bottom: solid 1px #F6683C;
+      }
+      .skills h1{
+        font-size: 16px;
+        
+      }
+  }

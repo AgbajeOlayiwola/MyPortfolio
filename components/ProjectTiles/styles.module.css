@@ -1,0 +1,21 @@
+.projectsBack{
+    background-color: #183A58;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.tellidocOther{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.mainImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.projectsBack img{
+    border-radius: 12px;
+  
+}
