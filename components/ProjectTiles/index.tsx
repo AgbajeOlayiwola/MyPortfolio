@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
 import Modal from "react-modal";
@@ -12,6 +12,20 @@ const customStyles = {
     height: "60%",
     overflow: "scroll",
     marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
+
+const mobilecustomStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    width: "85%",
+    height: "60%",
+    overflow: "scroll",
+    marginRight: "0%",
     transform: "translate(-50%, -50%)",
   },
 };
@@ -34,6 +48,23 @@ const ProjectTiles = ({
   moreAbout: string;
   features: any;
 }) => {
+  const [width, setWidth] = useState(0);
+
+  const [height, setHeight] = useState(0);
+  const handleWindowResize = () => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+    console.log(width);
+  };
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+    // component is mounted and window is available
+    handleWindowResize();
+    window.addEventListener("resize", handleWindowResize);
+    // unsubscribe from the event on component unmount
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, [width]);
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
@@ -72,16 +103,21 @@ const ProjectTiles = ({
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
-        style={customStyles}
+        style={width > 900 ? customStyles : mobilecustomStyles}
         contentLabel="Example Modal"
       >
-        <Image src={image1} width={850} height={520} alt="telidocsApp" />
+        <Image
+          src={image1}
+          width={width > 900 ? 850 : 230}
+          height={width > 900 ? 520 : 120}
+          alt="telidocsApp"
+        />
         <h1 className={`hearo-section-title`}>{shortTitle}</h1>
-        <p>{about}</p>
+        <p className={styles.about}>{about}</p>
         <h1 className={`hearo-section-title`}>Key Featrues</h1>
         <br />
         <br />
-        <p className={`hero-section-desc`}>
+        <p className={`hero-section-desc ${styles.about}`}>
           {features.feature1}
           <br />
           <br />
@@ -93,7 +129,7 @@ const ProjectTiles = ({
           {features.feature4}
           <br />
         </p>
-        <p className={`hero-section-desc`}>{moreAbout}</p>
+        <p className={`hero-section-desc  ${styles.about}`}>{moreAbout}</p>
         <br />
         <br />
       </Modal>

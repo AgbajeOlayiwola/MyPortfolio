@@ -47,7 +47,7 @@ body[data-theme="dark-theme"] {
 body[data-theme="sea-theme"] {
   --bg-color: #090e12;
   --headings-color: #ff6464;
-  h1:clamp(2.6875rem,1.9138rem + 3.301vw,5.875rem);
+  font-size:clamp(10px,15px,12px);
   --desc-color: #a5a5a5;
   font-family: "Josefin Sans";
 }
