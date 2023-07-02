@@ -28,7 +28,7 @@ const HeroSection = () => {
         <div className={styles.heroSectionDiv}>
           <div className={styles.titleSection}>
             <div className={styles.ownwemage}>
-              <Image src="/olaAgbaje.jpeg" width={160} height={160} alt="ola" />
+              <Image src="/portImage.jpg" width={160} height={180} alt="ola" />
             </div>
             <h1 className={`hearo-section-title ${styles.heroTitle}`}>
               Hi my Name Is Ola And I Am A Front-End Focused{" "}
