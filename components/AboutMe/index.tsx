@@ -1,16 +1,14 @@
-import React from "react";
-import styles from "./styles.module.css";
 import Cover from "../Cover";
-import Image from "next/image";
 import Sections from "../Sections";
+import styles from "./styles.module.css";
 
 const AboutMe = () => {
   return (
     <Cover>
       <div className={styles.aboutMe}>
-        <div>
-          <h1 className={`hearo-section-title ${styles.heading}`}>About Me</h1>
-          <p className={`hero-section-desc ${styles.aboutParagraph}`}>
+        <div >
+          <h1 className={`hearo-section-title ${styles.heading}`} data-aos="fade-up">About Me</h1>
+          <p className={`hero-section-desc ${styles.aboutParagraph}`} data-aos="fade-up">
             As a dedicated and results-driven front-end engineer with 1+ years
             of experience, I specialize in building dynamic and intuitive user
             interfaces using ReactJS. My expertise lies in crafting engaging web
@@ -28,12 +26,13 @@ const AboutMe = () => {
             interfaces. <br />
             <br />
           </p>
-          <Sections
+         
+           <Sections
             paragraph={
-              "Passionate about continuous learning, I stay updated with emerging trends and technologies in the front-end space. I thrive in fast-paced environments, constantly seeking opportunities to expand my skill set and tackle new challenges head-on. If you are seeking a front-end engineer who is driven, technically proficient, and committed to delivering exceptional results, lets connect. I am eager to contribute my expertise and collaborate on impactful projects that push the boundaries of web development."
+              "Collaboration is at the heart of my work. I have successfully worked with cross-functional teams, including UI/UX designers, back-end developers, and project stakeholders, to bring visions to life. My effective communication skills and ability to translate complex technical concepts into actionable insights enable me to align project goals and drive successful outcomes. Throughout my career, I have contributed to various projects, ranging from building robust e-commerce platforms to developing interactive data visualization tools."
             }
             layout="flex"
-            image="/form.png"
+            image={"/MySmeApp/logins.png"}
           />
           <Sections
             paragraph={
@@ -42,14 +41,17 @@ const AboutMe = () => {
             layout="flexNormmal"
             image={"/telidoc/landingpage.png"}
           />
-          <br />
+
           <Sections
             paragraph={
-              "Collaboration isat the heart of my work. I have successfully worked with cross-functional teams, including UI/UX designers, back-end developers, and project stakeholders, to bring visions to life. My effective communication skills and ability to translate complex technical concepts into actionable insights enable me to align project goals and drive successful outcomes. Throughout my career, I have contributed to various projects, ranging from building robust e-commerce platforms to developing interactive data visualization tools."
+              "The zino platform was built with nextjs and TypeScript"
             }
             layout="flex"
-            image={"/MySmeApp/payments.png"}
+            image={"/Zino/zino1.png"}
           />
+          
+          <br />
+         
         </div>
       </div>
     </Cover>

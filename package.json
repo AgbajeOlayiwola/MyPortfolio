@@ -15,6 +15,7 @@
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "aos": "^2.3.4",
     "dark-mode-toggle": "^0.14.6",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
@@ -32,6 +33,7 @@
     "typescript": "5.1.5"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/react-lottie": "^1.2.6",
     "@types/react-modal": "^3.16.0"
   }

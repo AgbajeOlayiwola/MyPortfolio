@@ -1,12 +1,9 @@
-import React from "react";
+import Lottie from "react-lottie";
 import Cover from "../Cover";
-import styles from "./styles.module.css";
-import Image from "next/image";
-import Modal from "react-modal";
-import ProjectTiles from "../ProjectTiles";
 import { ProjectImages } from "../Data/indexs";
 import scrollAnimation from "../Lotties/right.json";
-import Lottie from "react-lottie";
+import ProjectTiles from "../ProjectTiles";
+import styles from "./styles.module.css";
 
 const Projects = () => {
   const scrollOptions = {
@@ -28,6 +25,7 @@ const Projects = () => {
           return (
             <ProjectTiles
               key={index}
+              link={item.link}
               title={item.title}
               image1={item.image1}
               image2={item.image2}

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Cover from "../Cover";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
 const Sections = ({
@@ -33,10 +32,11 @@ const Sections = ({
     <div className={styles.sections}>
       <div className={layout === "flexNormmal" ? styles.flex1 : styles.flex2}>
         <div>
-          <p className={`hero-section-desc ${styles.para}`}>{paragraph}</p>
+          <p className={`hero-section-desc ${styles.para}`}  data-aos="zoom-out-left">{paragraph}</p>
         </div>
         <div>
           <Image
+           data-aos="flip-right"
             src={image}
             width={width < 990 ? 300 : 800}
             height={width < 990 ? 190 : 500}

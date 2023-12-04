@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import styles from "./styles.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
+import styles from "./styles.module.css";
 const customStyles = {
   content: {
     top: "50%",
@@ -38,6 +39,7 @@ const ProjectTiles = ({
   about,
   moreAbout,
   features,
+  link
 }: {
   title: string;
   image1: string;
@@ -47,6 +49,7 @@ const ProjectTiles = ({
   about: string;
   moreAbout: string;
   features: any;
+  link:string
 }) => {
   const [width, setWidth] = useState(0);
 
@@ -92,6 +95,7 @@ const ProjectTiles = ({
   };
   return (
     <>
+    <Link href={link} target='_blank'>
       <div onClick={dostuff} className={styles.mainImage}>
         <Image src={image1} width={400} height={220} alt="telidocsApp" />
         <div className={styles.tellidocOther}>
@@ -133,6 +137,7 @@ const ProjectTiles = ({
         <br />
         <br />
       </Modal>
+      </Link>
     </>
   );
 };

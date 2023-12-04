@@ -1,9 +1,33 @@
 export const ProjectImages = [
+    {
+    title: "Zino",
+    image1: "/Zino/zino1.png",
+    image2: "/Zino/zino2.png",
+    image3: "/Zino/zino3.png",
+    link:'https://www.myzino.co/',
+    shortTitle:
+      "Connecting farmers, merchants and agents all under one platform",
+    about:
+      "Zino is an innovative platform Connecting farmers, merchants and agents all under one platform",
+    moreAbout:
+      "Zino is a global impact-driven agricultural technology company enabling access to finance, markets, agro-services and advisory for micro, small & medium enterprises.",
+    features: {
+      feature1:
+        "Zino offers services such as loans, insurance,savings & investments, remittances/cash transfers",
+      feature2:
+        "Zino helps provide e-commerce,airtime purchase industrial processors and exporters",
+      feature3:
+        "Zino helps provide land clearing &/or preparation,mechanization seeds,fertilizers, harvesting, storage",
+      feature4:
+        "Zino helps offer good agricultural practices, weather information price information, farm/business management",
+    },
+  },
   {
     title: "Telidoc",
     image1: "/telidoc/landingpage.png",
     image2: "/telidoc/doctorsmodal.png",
     image3: "/telidoc/alldoctors.png",
+    link:'https://telidoc.netlify.app/',
     shortTitle: "Introducing Telidoc: Your All-in-One Healthcare Solution",
     about:
       "Telidoc, an app built by me, revolutionizes the way patients connect with doctors, providing convenient and accessible healthcare at your fingertips. With Telidoc, users can seamlessly access medical consultations and services through a comprehensive suite of features designed to prioritize patient well-being and convenience.",
@@ -22,9 +46,10 @@ export const ProjectImages = [
 
   {
     title: "MySmeApp",
-    image1: "/MySmeApp/login.png",
-    image2: "/MySmeApp/profile.png",
-    image3: "/MySmeApp/payments.png",
+    image1: "/MySmeApp/logins.png",
+    image2: "/MySmeApp/profiles.png",
+    image3: "/MySmeApp/payment.png",
+    link:'https://elevate-prod2.vercel.app/',
     shortTitle:
       "Introducing MySmeApp: Simplifying Payments and Ensuring Secure Transactions",
     about:
@@ -46,6 +71,7 @@ export const ProjectImages = [
     image1: "/GeekRadius/homepage.png",
     image2: "/GeekRadius/spaces.png",
     image3: "/GeekRadius/other.png",
+    link:'https://www.geekradius.com/',
     shortTitle: "Introducing GeekRadius: Empowering Creative Minds and Spaces",
     about:
       "GeekRadius is a vibrant online platform that serves as a hub for creative individuals, providing them with a space to showcase their talents and connect with like-minded individuals. As a part of the GeekRadius marketing website project, the platform now offers an array of services that can be easily explored and accessed. Users can browse through the various services offered, book sessions, rent spaces, or even hire the talented individuals behind GeekRadius for their own projects. With its user-friendly interface and comprehensive range of offerings, GeekRadius has become an indispensable resource for creative professionals.",
@@ -67,6 +93,7 @@ export const ProjectImages = [
     image1: "/Wishcard/homePage.png",
     image2: "/Wishcard/next.png",
     image3: "/Wishcard/nextii.png",
+    link:'http://wishcards.co/',
     shortTitle:
       "Introducing Wishcard:A Revolutionary Project for Personalized Greetings",
     about:
